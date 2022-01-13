@@ -1,0 +1,1331 @@
+<!-- <i class="fab fa-twitter"></i> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/fav.png" />
+    <title>Nordstrom Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+<body>
+    <div class="homeShipDiv">
+        <img class="shipCross" src="images/cross.PNG" />
+        <div class="homeShipSubDiv">
+            <div class="shipLeftDiv">
+                <p>We ship internationally</p>
+                <p>Nordstrom ships to over 200 countries/regions worldwide through our delivery partner Borderfree.</p>
+                <p>Ship to</p>
+                <select id="country">
+                    <option>India</option>
+                    <option>Phillipines</option>
+                    <option>Sri Lanka</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                </select>
+                <p class="shipShopText">Shop in</p>
+                <select id="shipCurrency">
+                    <option>Indian Rupee (INR)</option>
+                    <option>Phillipine Peso (PHP)</option>
+                    <option>Sri Lanka Rupee (LKR)</option>
+                    <option>British Pound (GBP)</option>
+                    <option>US Dollars (USD)</option>
+                </select>
+                <p class="shipUSAdd">Or <button>ship to a U.S. address</button></p>
+                <div class="saveButtonDiv">
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+            <div class="shipRightDiv">
+                <p>A few things to know: </p>
+                <ul>
+                    <li>Prices and payment are shown in your local currency.</li>
+                    <li>International shipping costs are based on your items, shipping method and destination.</li>
+                    <li>All taxes and duties are prepaid and shown at Checkout - there are no surprise charges at delivery!</li>
+                </ul>
+                <p class="lastSecondText">Shipping to Canada? <span class="spanClass">Shop on Nordstrom.ca</span> to get duty-free
+                    purchases in
+                    Canadian currency and free Standard Shipping.
+                    Borderfree is not available for Canada.
+                </p>
+                <p class="lastShipText">Questions about International shipping? <span class="spanClass">Get more details</span> or
+                    <span class="spanClass">contact us.</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="headerDiv">
+        <div class="header1">
+            <p><span class="saleSpan">Preview Anniversary Sale! </span>Build your Wish List now - sale starts August 28.
+                <button class="previewButton">Preview the sale</button></p>
+            <div class="india">
+                <img src="https://n.nordstrommedia.com/alias/IN.gif" />
+                <p>India</p>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logoDiv">
+                <p class="logo" id="homeRedirect">NORDSTROM</p>
+            </div>
+            <div class="navList">
+                <ul class="listStyle">
+                    <li id="annSale">Anniversary Sale</li>
+                    <li id="women">Women</li>
+                    <li id="men">Men</li>
+                    <li id="kids">Kids</li>
+                    <li id="activeWear">Activewear</li>
+                    <li id="home">Home</li>
+                    <li id="gifts">Gifts</li>
+                    <li id="beauty">Beauty</li>
+                    <li id="designer">Designer</li>
+                    <li id="sale">Sale</li>
+                    <li id="brands">Brands</li>
+                </ul>
+            </div>
+            <div class="navRight">
+                <div class="search">
+                    <img src="images/outline_search_black_24dp.png" />
+                    <p>Search</p>
+                </div>
+                <select name="sign in" id="signIn">
+                    <option id="signInOption" onclick="signIn()">Sign In</option>
+                </select>
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img src="images/shopping-bag.png">
+                    <p id="navCartCount">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer">
+        <div class="dropContainer">
+            <div class="leftMostDiv">
+                <p>Anniversary Sale: Get Inspired</p>
+                <p>Anniversary Events</p>
+                <p>The Nordy Club</p>
+                <p>Style Help</p>
+                <p>COVID-19 Safety Measures</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 class="hoverHeadings">Women</h4>
+                    <p>Clothing</p>
+                    <p>Shoes</p>
+                    <p>Handbags & Accessories</p>
+                    <p>Beauty Exclusives</p>
+                    <p>Young Adult</p>
+                    <h4 id="redirectMenPage">Men</h4>
+                    <p>Clothing</p>
+                    <p>Shoes</p>
+                    <p>Accessories</p>
+                    <p>Grooming & Cologne</p>
+                    <p>Young Adult</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Activewear</h4>
+                    <p>Women's Activewear</p>
+                    <p>Women's Active Shoes</p>
+                    <p>Men's Activewear</p>
+                    <p>Men's Active Shoes</p>
+                    <h4 class="hoverHeadings">Kids</h4>
+                    <p>Girls</p>
+                    <p>Boys</p>
+                    <p>Baby</p>
+                    <p>Shoes</p>
+                    <p>Baby Gear & Essentials</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Beauty Exclusives</h4>
+                    <p>Bath & Body</p>
+                    <p>Fragrance</p>
+                    <p>Hair Care</p>
+                    <p>Makeup</p>
+                    <p>Skincare</p>
+                    <p>Tools & Devices</p>
+                    <p>Gifts with Purchase</p>
+                    <h4 class="hoverHeadings">Home</h4>
+                    <p>Bath</p>
+                    <p>Bedding</p>
+                    <p>Home Decor & Accessories</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer2">
+        <div class="dropContainer2">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage2">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown2" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer3">
+        <div class="dropContainer3">
+            <div class="leftMostDiv">
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Graphic Tees</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Men's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage3">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Sunglasses</p>
+                    <p>Straw Bags</p>
+                    <p>Wallets & Card Cases</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Designer</h4>
+                    <p>Designer Clothing</p>
+                    <p>Designer Shoes</p>
+                    <p>Designer Accessories</p>
+                    <h4 class="hoverHeadings">Big & Tall</h4>
+                    <p>Clothing</p>
+                    <p>Jeans</p>
+                    <p>Pants</p>
+                    <p>Shirts</p>
+                    <h4 class="hoverHeadings">Grooming & Cologne</h4>
+                    <p>Body Care & Deodrant</p>
+                    <p>Cologne</p>
+                    <p>Dopp Kits & Toiletry Bags</p>
+                    <p>Gifts & Sets</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown3" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer4">
+        <div class="dropContainer4">
+            <div class="leftMostDiv">
+                <p>Kids: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>Back to School</p>
+                <p>Black-Owned & -Founded</p>
+                <p>Designer</p>
+                <p>Kids'Looks</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage4">All Girls</h4>
+                    <p>Girls Clothing (sizes 2T-6X)</p>
+                    <p>Girls Clothing(sizes7-16)</p>
+                    <p>Tween Girls</p>
+                    <p>Accessories</p>
+                    <p>Activewear</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers & Rompers</p>
+                    <p>Face Masks</p>
+                    <p>Jeans</p>
+                    <p>Leggings & Pants</p>
+                    <p>Pajamas & Robes</p>
+                    <p>Shorts</p>
+                    <p>Sweaters</p>
+                    <p>Tights & Socks</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">All Boys</h4>
+                    <p>Boys Clothing(sizes 2T-7)</p>
+                    <p>Boys Clothing (sizes 8-20)</p>
+                    <p>Tweet Boys</p>
+                    <p>Accessories</p>
+                    <p>Activewear</p>
+                    <p>Face Masks</p>
+                    <p>Jeans</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Shorts</p>
+                    <p>Sweaters</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>T-Shirts</p>
+                    <p>Swim Trunks & Rashguards</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Kids' Shoes</h4>
+                    <p>Toddler (sizes 7.5-12)</p>
+                    <p>Little Kids</p>
+                    <p>Big Kids</p>
+                    <h4 class="hoverHeadings">Girls' Shoes</h4>
+                    <p>Toddler (sizes 7.5-12)</p>
+                    <p>Little kid(sizes 12.5-3)</p>
+                    <p>Big Kids(sizes 3.5-7)</p>
+                    <h4 class="hoverHeadings">Baby & Walker Shoes</h4>
+                    <p>Girls</p>
+                    <p>Boys</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Baby Clothing</h4>
+                    <p>Accessories</p>
+                    <p>Baby Girl Clothing</p>
+                    <p>Baby Boy Clothing</p>
+                    <p>Unisex Baby Clothing</p>
+                    <p>Baby Shower Gifts</p>
+                    <h4 class="hoverHeadings">Baby Gear & Essentials</h4>
+                    <p>Baby Carriers</p>
+                    <p>Bath & Safety</p>
+                    <p>Blankets & Swaddles</p>
+                    <p>Car Seats</p>
+                    <p>Diaper Bags</p>
+                    <p>High Chairs</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown4" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer5">
+        <div class="dropContainer5">
+            <div class="leftMostDiv">
+                <p>Anniversary Sale: Get Inspired</p>
+                <p>Anniversary Events</p>
+                <p>The Nordy Club</p>
+                <p>Style Help</p>
+                <p>COVID-19 Safety Measures</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage5">Women</h4>
+                    <p>Clothing</p>
+                    <p>Shoes</p>
+                    <p>Handbags & Accessories</p>
+                    <p>Beauty Exclusives</p>
+                    <p>Young Adult</p>
+                    <h4 class="hoverHeadings">Men</h4>
+                    <p>Clothing</p>
+                    <p>Shoes</p>
+                    <p>Accessories</p>
+                    <p>Grooming & Cologne</p>
+                    <p>Young Adult</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Activewear</h4>
+                    <p>Women's Activewear</p>
+                    <p>Women's Active Shoes</p>
+                    <p>Men's Activewear</p>
+                    <p>Men's Active Shoes</p>
+                    <h4 class="hoverHeadings">Kids</h4>
+                    <p>Girls</p>
+                    <h4 class="hoverHeadings">Boys</h4>
+                    <p>Baby</p>
+                    <p>Shoes</p>
+                    <p>Baby Gear & Essentials</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Beauty Exclusives</h4>
+                    <p>Bath & Body</p>
+                    <p>Fragrance</p>
+                    <p>Hair Care</p>
+                    <p>Makeup</p>
+                    <p>Skincare</p>
+                    <p>Tools & Devices</p>
+                    <h4 class="hoverHeadings">Home</h4>
+                    <p>Bath</p>
+                    <p>Bedding</p>
+                    <p>Home Decor</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown5" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer6">
+        <div class="dropContainer6">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage6">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown6" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer7">
+        <div class="dropContainer7">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage7">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown7" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer8">
+        <div class="dropContainer8">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage8">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown8" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer9">
+        <div class="dropContainer9">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage9">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown9" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer10">
+        <div class="dropContainer10">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage10">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown10" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="dropMainContainer11">
+        <div class="dropContainer11">
+            <div class="leftMostDiv">
+                <p>Women: Get Inspired</p>
+                <p>New Arrivals</p>
+                <p>ASOS</p>
+                <p>Black-Owned Brands</p>
+                <p>Contemporary</p>
+                <p>Nordstrom Made</p>
+                <p>Pop-In:Disney Friends</p>
+                <p>TopShop & Trend</p>
+                <p>Wedding Shop</p>
+                <p>Women's Looks</p>
+                <p>Young Adult</p>
+            </div>
+            <div class="middleDiv">
+                <div>
+                    <h4 id="redirectMenPage11">Clothing</h4>
+                    <p>Activewear</p>
+                    <p>Blazers</p>
+                    <p>Coats & Jackets</p>
+                    <p>Dressers</p>
+                    <p>Jeans & Denim</p>
+                    <p>Lingerie & Hosiery</p>
+                    <p>Loungewear</p>
+                    <p>Pants & Leggings</p>
+                    <p>Shorts</p>
+                    <p>Skirts</p>
+                    <p>Sleepwear & Hobbies</p>
+                    <p>Sweatshirts & Hoodies</p>
+                    <p>Swimsuits & Cover-Ups</p>
+                    <p>Tops</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Shoes</h4>
+                    <p>Booties</p>
+                    <p>Boots</p>
+                    <p>Comfort</p>
+                    <p>Espadrilles</p>
+                    <p>Flats</p>
+                    <p>Heels</p>
+                    <p>Mules & Slides</p>
+                    <p>Oxford & Loafers</p>
+                    <p>Running Shoes</p>
+                    <p>Sandals</p>
+                    <p>Shoe care & Accessories</p>
+                    <p>Slippers</p>
+                    <p>Sneakers & Athletic</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Handbags</h4>
+                    <p>Backpacks</p>
+                    <p>Belt Bags</p>
+                    <p>Camera Bags</p>
+                    <p>Bucket Bags</p>
+                    <p>Clutches & Pouches</p>
+                    <p>Crossbody Bags</p>
+                    <p>Designer Bags</p>
+                    <p>Hobo Bags</p>
+                    <p>Luggage & Travel</p>
+                    <p>Satchels</p>
+                    <p>Shoulder Bags</p>
+                    <p>Straw Bags</p>
+                    <p>Tote Bags</p>
+                </div>
+                <div>
+                    <h4 class="hoverHeadings">Jewelry</h4>
+                    <p>Bracelets</p>
+                    <p>Earrings</p>
+                    <p>Necklaces</p>
+                    <p>Rings</p>
+                    <p>Watches</p>
+                    <h4 class="hoverHeadings">Fine Jewelry</h4>
+                    <h4 class="hoverHeadings">Accessories</h4>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Hair Accessories</p>
+                    <p>Hats</p>
+                    <p>Headphones</p>
+                    <p>Hijabs & Headscarves</p>
+                </div>
+            </div>
+            <div class="rightMostDiv">
+                <img id="closeDropDown11" src="images/cross.PNG" />
+                <img src="images/navDrop1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="headerDiv3">
+        <p>Pick Up Today - in Store or Curbside</p>
+        <p>Set Your Store</p>
+    </div>
+    <div class="body1">
+        <img src="images/bodyImage1.jpeg">
+        <img src="images/apply.PNG">
+    </div>
+    <div id="carosol1"></div>
+    <p class="previewText">Sale starts July 28. <button>Preview the sale now</button></p>
+    <div id="carosol2"></div>
+    <div class="greatDeals">
+        <h2>Great deals on popular items</h2>
+        <div class="greatDealImgs slider">
+            <div onclick="productPage(1)">
+                <img src="images/charlesHenry.PNG" />
+            </div>
+            <div onclick="productPage(0)">
+                <img src="images/chappals2.PNG"/>
+            </div>
+            <div onclick="productPage(2)">
+                <img src="images/chappals3.PNG"/>
+            </div>
+            <div onclick="productPage(3)">
+                <img src="images/chappals4.PNG"/>
+            </div>
+            <div onclick="productPage(4)">
+                <img src="images/Bp.PNG"/>
+            </div>
+            <div onclick="productPage(5)">
+                <img src="images/chappals2.PNG" />
+            </div>
+            <div onclick="productPage(6)">
+                <img src="images/flipFlop.PNG" />
+            </div>
+            <div onclick="productPage(7)">
+                <img src="images/downSlider5.PNG" />
+            </div>
+            <div onclick="productPage(8)">
+                <img src="images/pants.PNG" />
+            </div>
+            <div onclick="productPage(9)">
+                <img src="images/pink1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="freeStyleDiv">
+        <div>
+            <img src="images/freeStyle.jpeg" />
+            <div class="freeStyleTextDiv">
+                <p>Our stylists can help you explore and shop Anniversary Sale in stores or virtually.</p>
+                <button>Book a Free Appointment</button>
+            </div>
+        </div>
+        <div>
+            <img src="images/saleEvent.jpeg" />
+            <div class="freeStyleTextDiv2">
+                <p>We have free styling events online and in stores - plus restaurant specials, livestreams and more.</p>
+                <button>See Our Anniversary EVents</button>
+            </div>
+        </div>
+    </div>
+    <div class="mickey">
+        <div class="mickeyDivs">
+            <img src="images/mickey.jpeg" />
+            <div class="mickeyText">
+                <p>July 23 - September 12</p>
+                <p>Celebrate friendship with a handpicked and custom-made Disney Mickey & Friends collection.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="mickeyDivs">
+            <img src="images/necklace.jpeg" />
+            <div class="mickeyText">
+                <p>David Yurman</p>
+                <p>Featuring hand-set diamonds in luminescent sterling silver - exclusively here.</p>
+                <button>David Yurman</button>
+            </div>
+        </div>
+        <div class="mickeyDivs">
+            <img src="images/dining.jpeg" />
+            <div class="mickeyText">
+                <p>Summer Soirees Made Easy</p>
+                <p>Perfect your outdoor dining oasis with picks from LSA, Five Two by Food52 and more.</p>
+                <div class="diningButtons">
+                    <button>All Home</button>
+                    <button>Outdoor Dining</button>
+                    <button>Tabletop</button>
+                    <button>Kitchen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orangeDiv">
+        <p>DESIGNER CLEARANCE</p>
+        <p>UPTO 70% OFF</p>
+        <p>From the best brands of the season. <button>Designer Sale</button></p>
+    </div>
+    <div class="categoryDiv">
+        <h2>SHOP BY CATEGORIES</h2>
+        <div class="catDivs">
+            <div class="catDiv1">
+                <img src="images/review.PNG"/>
+                <p>Preview Anniversary Sale</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/women.PNG" />
+                <p>Shop Women</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/bag.PNG" />
+                <p>Shop Designer</p>
+            </div>
+            <div class="catDiv1" id="catDiv1">
+                <img src="images/shopMen.PNG" />
+                <p>Shop Men</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/shopKids.PNG" />
+                <p>Shop Kids</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/shopBeauty.PNG" />
+                <p>Shop Beauty & Fragrance</p>
+            </div>
+        </div>
+    </div>
+    <div class="greatDeals">
+        <h2>New Arrivals from brands you shop</h2>
+        <div class="greatDealImgs slider">
+            <div>
+                <img src="images/downSlider1.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider2.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider3.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider4.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider5.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider6.PNG" />
+            </div>
+            <div>
+                <img src="images/downSlider7.PNG" />
+            </div>
+            <div>
+                <img src="images/downSlider8.PNG" />
+            </div>
+            <div>
+                <img src="images/shoe2.PNG" />
+            </div>
+            <div>
+                <img src="images/shoe1.PNG" />
+            </div>
+            <div>
+                <img src="images/newArrivals1.PNG" />
+            </div>
+            <div>
+                <img src="images/newArrivals2.PNG" />
+            </div>
+            <div>
+                <img src="images/newArrivals3.PNG" />
+            </div>
+            <div>
+                <img src="images/newArrivals4.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="black">
+        <img src="images/blackOwned.jpeg"/>
+        <div class="blackTextDiv">
+            <p>Shop the brands and get to know visionary creatives from the Black community.</p>
+            <div>
+                <button>Explore Diversity, Inclusion & Belonging</button>
+                <button>Shop Black-Owned & Black-Founded Brands</button>
+            </div>
+        </div>
+    </div>
+    <div class="trunkDiv">
+        <div>
+            <img src="images/trunk.jpeg"/>
+            <div class="trunkTextDiv">
+                <p>Try before you with Nordstrom Trunk Club. Get head-to-toe outfits, styled by us, delivered right to your door.</p>
+                <button>Take Your Style Quiz</button>
+            </div>
+        </div>
+        <div>
+            <img src="images/styleHelp.jpeg"/>
+            <div class="trunkTextDiv2">
+                <h2>Free Style Help</h2>
+                <p>Connect with a stylist in stores or online. It's free and easy - with zero pressure.
+                </p>
+                <button>Book an Appointment Nordstrom Styling</button>
+            </div>
+        </div>
+    </div>
+    <div class="helpDiv">
+        <p>NEED   HELP ?</p>
+        <div class="trackDiv">
+            <img src="images/track.PNG"/>
+            <img src="images/return.PNG"/>
+            <img src="images/adjustment.PNG"/>
+        </div>
+    </div>
+    <div class="touch">
+        <img src="images/touch.jpeg"/>
+        <div class="touchTextDiv">
+            <h3>Stay in Touch</h3>
+            <p>Sign Up and stay in the know! Fashion, beauty, upcoming sales and events - we'll bring it all to you.</p>
+            <button>Sign Up for Email</button>
+        </div>
+    </div>
+    <div class="footerDiv">
+        <div class="footerTextDiv">
+            <div>
+                <h5>Customer Service</h5>
+                <p>Contact Us</p>
+                <p>Order Status</p>
+                <p>Shipping</p>
+                <p>Returns & Exchanges</p>
+                <p>Product Recalls</p>
+            </div>
+            <div>
+                <h5>About Us</h5>
+                <p>Stores & Events</p>
+                <p>Careers</p>
+                <p>Corporate Social Responsibility</p>
+                <p>Diversity, Inclusion & Belonging</p>
+                <p>Get Email Updates</p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <p>Personal Styling</p>
+                <p>Alterations & Tailoring</p>
+                <p>Spa Nordstrom</p>
+                <p>Nordstrom Restaurants</p>
+                <p>Gift Cards</p>
+            </div>
+            <div>
+                <h5>Nordstrom Card</h5>
+                <p>Pay My Bill</p>
+                <p>Manage My Nordstrom Card</p>
+            </div>
+            <div>
+                <h5>Nordstrom, Inc</h5>
+                <p>Nordstrom Rack</p>
+                <p>Nordstrom Canada</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div> 
+            <div>
+                <h5>Gift Cards</h5>
+                <p>Stores & Events</p>
+                <p>Careers</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div>
+        </div>
+        <div class="termsOfService">
+            <p>Your Privacy Rights</p>
+            <p>Do Not Sell My Info</p>
+            <p>Terms & Conditions</p>
+            <p>Interes-Based Ads</p>
+            <p>@2021 Nordstrom, Inc.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="landingPage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.slider').slick({
+    arrow: true,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+</script>

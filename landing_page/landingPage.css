@@ -1,0 +1,1196 @@
+body {
+    font-family: 'Voltaire', sans-serif;
+    /* background-color: gray; */
+}
+#headerDiv {
+    width: 100%;
+    height: 130px;
+    /* border: 1px solid black; */
+    padding-top: 0px;
+}
+.header1 {
+    height: 50px;
+    background-color: rgb(251,228,70);
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.header1 > p {
+    margin-top: 0px;
+    padding-top: 15px;
+    font-size: 14px;
+    margin-left: 350px;
+}
+.saleSpan {
+    font-weight: bold;
+}
+.previewButton {
+    border: none;
+    background-color: rgb(251,228,70);
+    font-size: 14px;
+    text-decoration: underline;
+}
+.india {
+    float: right;
+    display: flex;
+    margin-right: 30px;
+}
+.india:hover {
+    cursor: pointer;
+}
+.india > img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 8px;
+    /* padding-right: 10px; */
+}
+.india > p {
+    font-size: 14px;
+    padding-top: 3px;
+}
+.header2 {
+    height: 80px;
+    /* border: 1px solid green; */
+    display: flex;
+}
+.logoDiv {
+    height: 80px;
+    width: 200px;
+    /* background-color: gray; */
+}
+.logo {
+    width: 250px;
+    height: 80px;
+    background-color: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-right: 0px;
+    margin-top: 22px;
+}
+.navList {
+    width: 50%;
+    height: 80px;
+    /* background-color: peachpuff; */
+    margin-left: 90px;
+}
+.listStyle {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 0px;
+    font-size: 14px;
+}
+.listStyle > li:first-child {
+    background-color: rgb(251,228,70);
+}
+#women:hover, #men:hover, #kids:hover, #activeWear:hover, #gifts:hover, #home:hover, #beauty:hover,
+#brands:hover, #sale:hover, #designer:hover {
+    font-weight: bold;
+}
+.listStyle > li:nth-child(10) {
+    color: red;
+}
+.navRight {
+    width: 25%;
+    height: 80px;
+    /* background-color: peachpuff; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+.search {
+    display: flex;;
+}
+.search > img {
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    color: gray;
+}
+.search > p {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#signIn {
+    height: 20px;
+    width: 80px;
+    border: none;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.navRight > .navShopIcon img{
+    width: 30px;
+    height: 35px;
+    margin-top: 18px;
+}
+/* dynamic nav cart css - neeraj */
+.navShopIcon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.navShopIcon > p{
+    position: absolute;
+    top: 20px;
+    font-size: small;
+}
+.navShopIcon:hover{
+    cursor: pointer;
+}
+/* end */
+.headerDiv3 {
+    height: 80px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.headerDiv3 > p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 25px;
+    line-height: 0cm;
+}
+.headerDiv3 > p:last-child {
+    font-size: 14px;
+    font-stretch: extra-expanded;
+    text-decoration: underline;
+}
+.body1 {
+    width: 90%;
+    height: 550px;
+    margin-left: 5%;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.body1 > img:first-child {
+    width: 60%;
+}
+.body1 > img:last-child {
+    width: 40%;
+}
+#carosol1 {
+    height: 180px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+.carosolImg1 {
+    height: 180px;
+    width: 100%;
+}
+.previewText {
+    text-align: center;
+    font-size: 14px;
+}
+.previewText > button {
+    border: none; 
+    background-color:  white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+#carosol2 {
+    width: 90%;
+    height: 450px;
+    margin-left: 5%;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+}
+.carosolImg2 {
+    width: 100%;
+    height: 450px;
+}
+.greatDeals {
+    height: 550px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    /* background-color: gray; */
+    /* border: 1px solid black; */
+}
+.greatDealImgs {
+    height: 500px;
+    /* width: 100%; */
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.greatDealImgs > div {
+    height: 500px;
+    /* width: 50%; */
+    /* border: 1px solid red; */
+}
+.greatDealImgs > div:hover {
+    cursor: pointer;
+}
+.greatDealImgs > div > img {
+    height: 100%;
+    width: 20%;
+}
+
+.slider .slick-next::before,
+.slider .slick-prev::before {
+  /* font-family: "slice"; */
+  font-size: 30px;
+  color: black;
+  background-color: rgb(229, 233, 232);
+  border-radius: 20px;
+}
+
+.freeStyleDiv {
+    width: 90%;
+    height: 450px;
+    margin-left: 5%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.freeStyleDiv > div {
+    width: 49.5%;
+    height: 450px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.freeStyleDiv > div > img {
+    width: 102%;
+    height: 450px;
+    /* position: relative; */
+}
+.freeStyleTextDiv {
+    width: 250px;
+    height: 150px;
+    top: 20%;
+    left: 5%;
+    margin-top: 10%;
+    position: absolute;
+    /* border: 1px solid black; */
+}
+.freeStyleTextDiv > p, .freeStyleTextDiv2 > p {
+    font-size: 15px;
+    line-height: 0.6cm;
+}
+.freeStyleTextDiv > button, .freeStyleTextDiv2 > button {
+    font-size: 16px;
+    border: none;
+    text-decoration: underline;
+    padding-left: 0px;
+    background-color: rgb(254,180,171);
+    /* border-bottom: 1px solid black; */
+}
+.freeStyleTextDiv2 > button {
+    background-color: rgb(160,197,210);
+}
+.freeStyleTextDiv2 {
+    width: 250px;
+    height: 150px;
+    top: 30%;
+    left: 5%;
+    margin-top: 10%;
+    position: absolute;
+    /* border: 1px solid black; */
+} 
+.freeStyleDiv > div > img:last-child {
+    margin-right: 5px;
+}
+.freeStyleDiv > div > img:last-child {
+    margin-left: 5px;
+}
+.mickey {
+    width: 90%;
+    height: 550px;
+    margin-left: 5%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.mickeyDivs {
+    width: 32%;
+    height: 550px;
+    /* border: 1px solid red; */
+}
+/* .mickeyImg {
+    width: 100%;
+    height: 380px;
+    border: 1px solid green;
+} */
+.mickeyDivs > img {
+    width: 104%;
+    height: 380px;
+}
+.mickeyText > p:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+.mickeyText > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 0.7cm;
+}
+.mickeyText > button {
+    height: 30px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    padding-left: 0px;
+}
+.diningButtons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.diningButtons  button {
+    height: 30px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    padding-left: 0px;
+}
+.orangeDiv {
+    width: 90%;
+    height: 250px;
+    margin-left: 5%;
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(254,59,31);
+}
+.orangeDiv p {
+    color: rgb(255,255,255);
+}
+.orangeDiv > p:first-child {
+    font-size: 50px;
+    word-spacing: 10px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.orangeDiv > p:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0cm;
+    margin-top: 0px;
+}
+.orangeDiv > p:last-child {
+    font-size: 14px;
+}
+.orangeDiv > p:last-child > button {
+    color: white;
+    font-size: 16px;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    background-color: rgb(254,59,31);
+    text-decoration: underline;
+}
+.categoryDiv {
+    height: 450px;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-top: 80px;
+    text-align: center;
+}
+.catDivs {
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.catDiv1 {
+    width: 15.8%;
+    height: 380px;
+    /* border: 1px solid green; */
+}
+.catDiv1 > img {
+    width: 100%;
+    height: 330px;
+}
+.catDiv1 > p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.black {
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+    margin-top: 100px;
+    position: relative;
+}
+.black > img {
+    width: 100%;
+    height: 150px;
+}
+.blackTextDiv {
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 1.5%;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+.blackTextDiv > p {
+    font-size: 14px;
+    color: white;
+}
+.blackTextDiv > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.blackTextDiv > div > button {
+    font-size: 15px;
+    padding-left: 0px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: underline;
+}
+.trunkDiv {
+    width: 90%;
+    height: 350px;
+    margin-left: 5%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.trunkDiv > div {
+    width: 49.5%;
+    height: 350px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.trunkTextDiv {
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+    /* border: 1px solid black; */
+}
+.trunkTextDiv2 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 65%;
+    position: absolute;
+}
+.trunkTextDiv > p, .trunkTextDiv2 > p {
+    font-size: 15px;
+    line-height: 0.6cm;
+    text-align: center;
+}
+.trunkTextDiv > button, .trunkTextDiv2 > button {
+    border: none;
+    font-size: 15px;
+    margin-left: 15%;
+    text-decoration: underline;
+    background-color: rgb(243,245,245);
+}
+.trunkTextDiv2 > button {
+    margin-left: 0%;
+    font-size: 16px;
+}
+.trunkDiv > div > img {
+    width: 100%;
+    height: 350px;
+}
+.helpDiv {
+    width: 90%;
+    height: 390px;
+    margin-left: 5%;
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(246,246,246);
+}
+.helpDiv > p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    word-spacing: 5px;
+}
+.trackDiv {
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.trackDiv > img {
+    width: 31%;
+    height: 200px;
+    /* border: 1px solid red; */
+}
+.touch {
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+    margin-top: 80px;
+    position: relative;
+}
+.touch > img {
+    width: 100%;
+    height: 150px;
+}
+.touchTextDiv {
+    width: 60%;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    /* border: 1px solid black; */
+}
+.touchTextDiv > h3 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.touchTextDiv > p {
+    padding-top: 5px;
+    /* margin-top: 5px; */
+    font-size: 15px;
+}
+.touchTextDiv > button {
+    border: none; 
+    font-size: 16px;
+    padding-left: 0px;
+    text-decoration: underline;
+    background-color: rgb(246,246,246);
+}
+.footerDiv {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    background-color: rgb(246,246,246);
+}
+.footerTextDiv {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+.footerTextDiv > div {
+    height: 250px;
+    width: 15.5%;
+    /* border: 1px solid blue; */
+}
+.footerTextDiv p {
+    font-size: 13px;
+}
+.termsOfService {
+    width: 60%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.5%;
+    /* border: 1px solid black; */
+}
+.termsOfService > p {
+    font-size: 13px;
+}
+.dropDiv {
+    width: 70%;
+    height: 200px;
+    background-color: peachpuff;
+}
+.dropMainContainer {
+    width: 100%;
+    display: none;
+    position: absolute;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+.dropContainer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255,255,255);
+    /* border: 1px solid black; */
+}
+.leftMostDiv {
+    height: 500px;
+    width: 20%;
+    margin-left: 30px;
+    /* border: 1px solid black; */
+}
+.leftMostDiv > p {
+    font-weight: bold;
+}
+.middleDiv {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+.middleDiv > div {
+    width: 22%;;
+    height: 500px;
+    /* border: 1px solid green; */
+}
+.middleDiv div p {
+    font-size: 14px;
+    line-height: 0.5cm;
+}
+.rightMostDiv {
+    width: 20%;
+    height: 500px;
+    /* border: 1px solid blue; */
+}
+.rightMostDiv > img:first-child {
+    float: right;
+    margin-top: 30px;
+    background-color: rgb(255,255,255);
+}
+.rightMostDiv > img:nth-child(2) {
+    margin-top: 100px;
+}
+.dropMainContainer2, .dropMainContainer3, .dropMainContainer4, .dropMainContainer5, .dropMainContainer6, .dropMainContainer7, .dropMainContainer8,
+.dropMainContainer9, .dropMainContainer10, .dropMainContainer11 {
+    width: 100%;
+    display: none;
+    position: absolute;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+.dropContainer2, .dropContainer3, .dropContainer4, .dropContainer5, .dropContainer6, .dropContainer7, .dropContainer8,
+.dropContainer9, .dropContainer10, .dropContainer11 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255,255,255);
+    /* border: 1px solid black; */
+}
+#women:hover, #annSale:hover, #men:hover, #kids:hover, #home:hover, #gifts:hover, #beauty:hover, 
+#designer:hover, #sale:hover, #brands:hover, #activeWear:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#leaveDropDown2:hover, #leaveDropDownWomen2:hover, #leaveDropDownMen2:hover, #leaveDropDownKids2:hover, #leaveDropDownWear2:hover,
+#leaveDropDownGifts2:hover, #leaveDropDownHome2:hover, #leaveDropDownBeauty2:hover, #leaveDropDownDesigner2:hover, #leaveDropDownBrand2:hover, #leaveDropDownSale2:hover {
+    cursor: pointer;
+}
+#redirectMenPage:hover, #redirectMenPage2:hover, #redirectMenPage3:hover, #redirectMenPage4:hover, #redirectMenPage5:hover, #redirectMenPage6:hover, #redirectMenPage7:hover,
+#redirectMenPage8:hover, #redirectMenPage9:hover, #redirectMenPage10:hover, #redirectMenPage11:hover, .hoverHeadings:hover {
+    color: red;
+    cursor: pointer;
+}
+.homeShipDiv {
+    height: 500px;
+    width: 60%;
+    border: 1px solid rgb(206, 204, 204);
+    margin-left: 20%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    background-color:rgb(255,255,255);
+    top: 10%;
+    box-shadow: 8px 8px 16px 0px rgb(112, 112, 112);
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+/* .homeShipDiv:hover {
+    cursor: pointer;
+} */
+.homeShipSubDiv {
+    width: 100%;
+    height: 480px;
+    background-color: rgb(255,255,255);
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.homeShipDiv > img {
+    height: 20px;
+    width: 20px;
+    float: right;
+}
+.shipLeftDiv, .shipRightDiv {
+    height: 80%;
+    width: 40%;
+    border: 1px solid rgb(235, 235, 235);
+    margin-top: 3%;
+}
+.shipLeftDiv > p:first-child {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: rgb(82, 81, 81);
+}
+.shipLeftDiv > p:nth-child(2) {
+    font-size: 13px;
+    line-height: 0.6cm;
+    color:rgb(61, 60, 60);
+}
+.shipLeftDiv > p:nth-child(3), .shipShopText {
+    font-weight: bold;
+    line-height: 0cm;
+    padding-top: 10px;
+    font-size: 14px;
+    color:rgb(61, 60, 60);
+}
+#shipCurrency, #country {
+    height: 40px;
+    width: 250px;
+    border: 1px solid rgb(187, 187, 187);
+}
+.shipUSAdd > button {
+    border: none;
+    font-size: 13px;
+    text-decoration: underline;
+    background-color: rgb(255,255,255);
+}
+.saveButtonDiv > button:first-child{
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    color: rgb(255,255,255);
+}
+.saveButtonDiv > button:last-child {
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(255,255,255);
+    color: black;
+}
+/* .verticalLineDiv {
+    height: 100%;
+    width: 0px;
+    background-color: rgb(185, 185, 185);
+} */
+.shipRightDiv {
+    color:rgb(61, 60, 60);
+}
+.shipRightDiv > p:first-child{
+    font-size: 13px;
+    font-weight: 600;
+}
+.shipRightDiv > ul > li {
+    font-size: 13px;
+    line-height: 0.6cm;
+}
+.lastSecondText, .lastShipText {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 0.5cm;
+}
+/* .lastShipText {
+    font-size: 13px;
+} */
+.spanClass {
+    text-decoration: underline;
+}
+.shipCross {
+    height: 60px;
+    width: 60px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.shipCross:hover {
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .headerDiv > p {
+        font-size: 9px;
+    }
+    .header1 {
+        height: 50px;
+        background-color: rgb(251,228,70);
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header1 > p {
+        margin-top: 0px;
+        padding-top: 15px;
+        font-size: 9px;
+        margin-left: 50px;
+    }
+    .previewButton {
+        display: none;
+    }
+    .header2 {
+        height: 100px;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logoDiv {
+        height: 50px;
+        width: 50px;
+        /* background-color: gray; */
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        background-color: none;
+        border: none;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 150px;
+        padding-right: 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .navList {
+        /* width: 80%;
+        height: 100px;
+        /* background-color: peachpuff; */
+        /* margin-left: 30px; */
+        display: none;
+    }
+    .listStyle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 30px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    .listStyle {
+        margin-top: 5px;
+        font-size: 9px;
+        margin-left: 2px;
+    }
+    .navRight {
+        width: 50%;
+        height: 80px;
+        margin-top: 20px;
+        /* background-color: peachpuff; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    #signIn {
+        height: 20px;
+        width: 80px;
+        border: none;
+        margin-top: 30px;
+        /* margin-left: 5px; */
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .search > img {
+        width: 20px;
+        height: 20px;
+        margin-top: 32px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .navRight > img {
+        padding-left: 10px;
+    }
+    .search > p {
+        margin-top: 32px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .headerDiv3 {
+        display: none;
+    }
+    .body1 {
+        width: 95%;
+        height: 250px;
+        margin-left: 2.5%;
+        margin-top: 15px;
+    }
+    #carosol1, .previewText {
+        display: none;
+    }
+    #carosol2 {
+        width: 95%;
+        height: 250px;
+        margin-left: 2.5%;
+        margin-top: 30px;
+        /* border: 1px solid black; */
+    }
+    .carosolImg2 {
+        width: 100%;
+        height: 250px;
+    }
+    .greatDeals > h2 {
+        font-size: 22px;
+    }
+    .slider .slick-next::before,
+    .slider .slick-prev::before {
+        /* font-family: "slice"; */
+        font-size: 18px;
+        color: black;
+        background-color: rgb(229, 233, 232);
+        border-radius: 10px;
+    }
+    .greatDealImgs > div {
+        padding-left: 40px;
+    }
+    .freeStyleDiv {
+        width: 95%;
+        height: 520px;
+        margin-left: 2.5%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .freeStyleDiv > div {
+        width: 100%;
+        height: 48%;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .freeStyleDiv > div > img {
+        width: 102%;
+        height: 90%;
+        /* position: relative; */
+    }
+    .freeStyleTextDiv {
+        width: 150px;
+        height: 100px;
+        top: 15%;
+        left: 5%;
+        margin-top: 12%;
+        position: absolute;
+        /* border: 1px solid black; */
+    }
+    .freeStyleTextDiv > p, .freeStyleTextDiv2 > p {
+        font-size: 9px;
+        line-height: 0.3cm;
+    }
+    .freeStyleTextDiv > button, .freeStyleTextDiv2 > button {
+        font-size: 10px;
+    }
+    .freeStyleTextDiv2 {
+        width: 150px;
+        height: 100px;
+        top: 25%;
+        left: 5%;
+        margin-top: 10%;
+        position: absolute;
+        /* border: 1px solid black; */
+    } 
+    .mickey {
+        width: 95%;
+        height: 750px;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .mickeyDivs {
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .mickeyDivs > img {
+        width: 100%;
+        height: 140px;
+        margin-left: 10px;
+    }
+    .mickeyText > p:first-child {
+        font-size: 9px;
+    }
+    .mickeyText >p:nth-child(2) {
+        font-size: 10px;
+    }
+    .mickeyText > button {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+    .diningButtons  button {
+        height: 20px; 
+        font-size: 11px;
+    }
+    .diningButtons button:first-child {
+        margin-left: 50px;
+    }
+    .orangeDiv { 
+        display: none;
+    }
+    .categoryDiv {
+        height: 500px;
+        width: 95%;
+        /* border: 1px solid black; */
+        margin-left: 2.5%;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .catDivs {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .catDiv1 {
+        width: 31%;
+        height: 49%;
+        /* border: 1px solid green; */
+    }
+    .catDiv1 > img {
+        width: 100%;
+        height: 160px;
+    }
+    .catDiv1 > p {
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3px;
+    }
+    .black {
+        display: none;
+    }
+    .trunkDiv {
+        width: 95%;
+        height: 300px;
+        margin-left: 2.5%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .trunkDiv > div:first-child {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+    .trunkTextDiv {
+        width: 150px;
+        height: 200px;
+        top: 20%;
+        left: 5%;
+        position: absolute;
+        /* border: 1px solid black; */
+    }
+    .trunkDiv > div:last-child {
+        /* margin-top: 0px;
+        margin-bottom: 0px; */
+        display: none;
+    }
+    .trunkTextDiv2 {
+        width: 140px;
+        height: 200px;
+        top: 5%;
+        left: 60%;
+        position: absolute;
+    }
+    .trunkTextDiv2 > h2 {
+        margin-left: 25px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .trunkTextDiv > p, .trunkTextDiv2 > p {
+        font-size: 9px;
+        line-height: 0.3cm;
+    }
+    .trunkTextDiv > button, .trunkTextDiv2 > button {
+        display: none;
+    }
+    .trunkTextDiv2 > button {
+        margin-left: 0%;
+        font-size: 11px;
+    }
+    .trunkDiv > div > img {
+        width: 100%;
+        height: 48%;
+    }
+    .helpDiv {
+        width: 95%;
+        height: 600px;
+        margin-left: 2.5%;
+        margin-top: 0px !important;
+        padding-top: 0px;
+    }
+    .helpDiv > p {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px;
+        word-spacing: 5px;
+    }
+    .trackDiv {
+        width: 80%;
+        height: 490px;
+        margin-left: 10%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .trackDiv > img {
+        width: 100%;
+        height: 31%;
+        /* border: 1px solid red; */
+    }
+    .touch {
+        display: none;
+    }
+    .footerDiv {
+        height: 400px;
+        width: 100%;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        background-color: rgb(246,246,246);
+    }
+    .footerTextDiv {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+    }
+    .footerTextDiv > div {
+        height: 170px;
+        width: 31%;
+        /* border: 1px solid blue; */
+    }
+    .footerTextDiv h5 {
+        font-size: 11px;
+    }
+    .footerTextDiv p {
+        font-size: 8px;
+    }
+    .termsOfService {
+        width: 100%;
+        height:20px;
+        margin-left: 0px;
+    }
+    .termsOfService > p {
+        font-size: 9px;
+        margin-top: 120px;
+    }
+}
